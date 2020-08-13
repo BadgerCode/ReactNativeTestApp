@@ -1,8 +1,12 @@
 import * as React from 'react';
-import { StyleSheet, Image, ScrollView } from 'react-native';
+import { StyleSheet, Image, ScrollView, Button } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
+
+const testFunction = () => {
+  console.log("Hello. This is a test")
+}
 
 export default function TabOneScreen() {
   return (
@@ -15,6 +19,16 @@ export default function TabOneScreen() {
         <Image
           source={{ uri: "https://reactnative.dev/docs/assets/p_cat1.png" }}
           style={{ width: 200, height: 200 }}
+        />
+        <Image
+          source={require('../assets/images/splash.png')}
+          style={{ width: 200, height: 200 }}
+        />
+        <Button
+          onPress={() => {
+            testFunction();
+          }}
+          title="Click me"
         />
       </View>
     </ScrollView>
