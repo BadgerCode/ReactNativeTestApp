@@ -1,6 +1,7 @@
 # React Native Test App
 A test mobile app made using React Native
 
+https://reactnative.dev/docs
 
 # Pre-requisites
 > `npm install -g expo-cli` <br>

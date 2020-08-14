@@ -3,6 +3,7 @@ import { StyleSheet, Image, ScrollView } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View, Button } from '../components/Themed';
+import SimpleComponent from '../components/SimpleComponent';
 
 const testFunction = () => {
   console.log("Hello. This is a test")
@@ -16,6 +17,7 @@ export default function TabOneScreen() {
         <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
         <EditScreenInfo path="/screens/TabOneScreen.tsx" />
         <Text>Hello</Text>
+        <SimpleComponent/>
         <Image
           source={{ uri: "https://reactnative.dev/docs/assets/p_cat1.png" }}
           style={{ width: 200, height: 200 }}
